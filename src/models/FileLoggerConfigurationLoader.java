@@ -6,6 +6,7 @@ import java.util.Properties;
 
 public class FileLoggerConfigurationLoader {
 
+
     private FileReader reader;
     private Properties prop;
 
