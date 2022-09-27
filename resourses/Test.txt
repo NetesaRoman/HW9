@@ -1,3 +1,1 @@
 
-Log time: 2022-09-27 message: DEBUG SUCCESS! hello my name is Gorogo DEBUG SUCCESS!
-Log time: 2022-09-27 message: hello my name is Gorogo

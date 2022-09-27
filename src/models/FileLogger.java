@@ -6,13 +6,12 @@ import java.time.format.DateTimeFormatter;
 import java.util.Formatter;
 import java.util.Properties;
 
-public class FileLogger {
+public class FileLogger  extends CustomLogger{
     //fields
     private FileLoggerConfiguration flc;
     private File file;
     private FileWriter fw;
     private DateTimeFormatter currentTimeFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-    private long currentMessageMemory;
     Formatter formatter;
 
     //constructor
@@ -38,6 +37,7 @@ public class FileLogger {
     }
 
     public void info(String message) {
+        long currentMessageMemory;
         LocalDateTime now = LocalDateTime.now();
         try {
             formatter.format(flc.getLogFormat(), currentTimeFormat.format(now), message);
